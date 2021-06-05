@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding:0;
+  font-family: "Roboto", sans-serif;
+}
+/*----------------------------- home ---------------------------*/
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.45),rgba(4,9,30,0.45)), url(html/fashion2.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  ;
+}
+
+nav {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 90px;
+}
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 2%;
+  position: relative;
+}
+.nav-link ul li a {
+  color: #f9faf5;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: burlywood;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+.textbox {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: royalblue;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textbox h1 {
+  text-align: end;
+  font-size: 90px;
+  color: rgb(127, 228, 181);
+}
+.textbox p {
+  font-size: 25px;
+  color: rgb(245, 227, 201);
+  margin: 10px 0 40px;
+  font-weight: 500;
+}
+.button {
+  display: inline block;
+    outline: 2px solid rgb(119, 250, 206);
+  outline-offset: 5px;
+  text-decoration: none;
+  color: rgb(119, 240, 199);
+  border: 1px solid rgb(115, 252, 206);
+  padding: 12px 34px;
+  position: relative;
+  font-size: 40px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.button:hover {
+  border: 1px solid rgb(21, 22, 24);
+  transition: 1s;
+  background: rgb(5, 5, 5);
+}
+/* --------------------Shop for section ----- */
+.shop-for {
+  background: burlywood;
+  width: 100%;
+  height: 100vh;
+  margin; 0 50px;
+  text-align: center;
+  padding-top: 100px;
+  
+  
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #70550f;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-left:40px;
+  margin-right: 40px;
+}
+.column {
+  width: 100%;
+  background: rgb(136, 131, 133);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  padding: 30px 30px;
+  font-size: 30px;
+  color: blanchedalmond;
+}
+/* ---------------------New arrival section-------------- */
+
+.size{
+  width: 100%;
+  height: 800px;
+  margin-top: 0;
+  margin-bottom: -20%;
+}
+.Narrival{
+  margin-top: 30px;
+  width: 100%;
+}
+ #heading {
+  margin-bottom: 30px ;
+  color: rgb(99, 29, 29);
+  font-size: 40px;
+  float: left;
+  
+} 
+
+#arrival {
+  height: 290px;
+  width:230px ;
+  display: inline;
+  margin: 10px;
+  padding-left: 7px;
+}
+.arrival{
+   background: silver;
+  overflow: scroll;
+  transition: all 2s ease-in 1s;
+  width: 100%;
+  height: 40%;
+ }
+
+ .arrival:hover{
+  transform: translateY(-10px);
+
+}
+/* ---------------- about ------- */
+.about {
+  color: darkslategrey;
+  margin-top: -20vh;
+  text-align: center;
+  font-size: 45px;
+  height: 70vh;
+}
+.about p {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: darkslategrey;
+}
+/* ---------------contact us section--------- */
+
+.contact {
+  background: rgb(203, 236, 135);
+  font-family: Verdana, sans-serif;
+  width: 100vw;
+  height: 115vh;
+  position: relative;
+  color: rgb(32, 32, 32);
+  font-size: 30px;
+  text-shadow: 2px 2px 1px grey ;
+}
+.contact a{
+    text-decoration: none;
+
+}
+.box {
+  text-align: center;
+  width: 500px;
+  padding: 40px;
+  background:rgb(203, 236, 135) ;
+  position: absolute;
+  top: 18%;
+  left: 28%;
+  
+}
+.box input[type="text"],
+.box input[type="text"],
+.box input[type="submit"] {
+  background-color: rgb(203, 236, 135);
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 7px;
+  background: white;
+  color: rgb(29, 29, 29);
+  font-weight: 1000;
+  font-size: 20px;
+}
+#message {
+  border: 2px solid rgb(48, 48, 47);
+  text-align: center;
+  border-radius: 7px;
+  background-color: rgb(183, 204, 142);
+  display: block;
+  margin: 20px auto;
+  background: white;
+  color: rgb(19, 18, 18);
+  font-weight: 1000;
+  font-size: 20px;
+}
+/* ----------------------------bak to top button----- */
+ .backtotop{
+  text-align: center;
+  background: rgb(203, 235, 135);
+} 
+#topp{
+  font-weight: 500;
+  color: white;
+}
+
